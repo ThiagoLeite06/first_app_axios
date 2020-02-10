@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import api from '../../services/api';
 import Container from '../../components/Container';
-import { Form, SubmitButton, List, Error } from './styles';
+import { Form, SubmitButton, List } from './styles';
 
 class Main extends React.Component {
   state = {
@@ -47,7 +47,7 @@ class Main extends React.Component {
       if (newRepo === '') throw 'Você precisa indicar um repositório';
 
       // Verifica se já existe o repositório dentro do estado repositories
-      const hasRepo = repositories.find(repository => repository.name == newRepo);
+      const hasRepo = repositories.find(repository => repository.name === newRepo);
       if (hasRepo) throw 'Repositório duplicado';
 
       // Tentar conectar na api
