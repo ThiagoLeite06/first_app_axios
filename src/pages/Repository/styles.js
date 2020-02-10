@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Loading = styled.div`
   color: #fff;
-  font-size: 30 px;
+  font-size: 30px;
   font-weight: bold;
   display: flex;
   justify-content: center;

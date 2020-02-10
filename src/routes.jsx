@@ -1,8 +1,8 @@
-import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Main from "./pages/Main";
-import Repository from "./pages/Repository";
+import Main from './pages/Main/index';
+import Repository from './pages/Repository/index';
 
 function Routes() {
   return (
